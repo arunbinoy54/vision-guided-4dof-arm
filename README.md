@@ -81,9 +81,12 @@ pip install -r pyserial
 4. Compile and flash the script to the target board.
 
 ### 3. Execution
+Verify your serial interface port (e.g., COM5 or /dev/ttyUSB0) inside main_sort.py and run:
 ```bash
 python Software/main_sort.py
 ```
+
+While the Python window is active, use the following operational inputs:
 ```text
 [SPACEBAR]: Capture tracked color-space object targets and trigger the automated sorting cycle.
 [R]: Force-clear busy state flags (Emergency lock breakout).
