@@ -1,6 +1,10 @@
 # vision-guided-4dof-arm
 # Autonomous 4-DOF Vision-Guided Robotic Sorting Manipulator
 
+<p align="center">
+  <img src="arm1.jpg" alt="Autonomous 4-DOF Robotic Manipulator Side Profile" width="500"/>
+</p>
+
 An end-to-end mechatronics and computer vision project implementing a closed-loop robotic sorting system. The pipeline integrates real-time color-space object tracking, analytical geometric inverse kinematics, an asynchronous serialization handshake, and a custom 3D-printed physical manipulator.
 
 ---
@@ -51,6 +55,7 @@ The physical manipulator was fully realized through rapid prototyping to validat
 * **Material Properties:** High-infill PLA utilized for major structural links (Shoulder and Forearm) to maximize bending stiffness and minimize elastic link deflection under load.
 * **Component Integration:** Modeled snug physical pockets for standard hobby PWM servo actuators directly into the structural links, featuring clean clearance paths for hardware fasteners.
 * **End-Effector:** Integrated a symmetrical parallel-jaw gripper driven by a synchronized twin spur-gear mesh and dual parallelogram linkages, ensuring perfectly parallel contact faces throughout the clamping stroke for non-slip material handling.
+* **Power Supply:** Fabricated a high-current external DC power source by retrofitting a commercial 5V mobile power adapter, routing a dedicated parallel power bus to supply stable current to all five PWM servos simultaneously, and establishing a shared common ground with the microcontroller to prevent signal noise.
 
 **Mechatronic Wiring Map**
 ```text
