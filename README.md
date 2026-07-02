@@ -3,7 +3,7 @@
 
 <p align="left">
   <img src="arm.jpg" alt="Autonomous 4-DOF Robotic Manipulator Side Profile" width="500"/>
-</p>
+
 
 <p align="right">
   <img src="arm1.jpg" alt="Autonomous 4-DOF Robotic Manipulator Side Profile" width="500"/>
