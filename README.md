@@ -1,12 +1,9 @@
 # vision-guided-4dof-arm
 # Autonomous 4-DOF Vision-Guided Robotic Sorting Manipulator
 
-<p align="left">
-  <img src="arm.jpg" alt="Autonomous 4-DOF Robotic Manipulator Side Profile" width="400"/>
-
-
-<p align="right">
-  <img src="arm1.jpg" alt="Autonomous 4-DOF Robotic Manipulator Side Profile" width="400"/>
+<p align="center">
+  <img src="arm1.jpg" alt="Autonomous 4-DOF Robotic Manipulator Side Profile" width="45%" />
+  <img src="arm.jpg" alt="Mechatronic System and Breadboard Wiring Layout" width="45%" />
 </p>
 
 An end-to-end mechatronics and computer vision project implementing a closed-loop robotic sorting system. The pipeline integrates real-time color-space object tracking, analytical geometric inverse kinematics, an asynchronous serialization handshake, and a custom 3D-printed physical manipulator.
