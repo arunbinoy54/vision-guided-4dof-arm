@@ -33,8 +33,9 @@ base_angle_rad = math.atan2(dy, dx)
 ```
 
 2. Spatial Link Transformation: Frame translations and link posture variations are resolved using 4x4 Homogeneous Transformation Matrices. The kinematic chain compounds sequential translations and rotations directly from the base through to the parallel-jaw gripper center:
+```text
    T_Ground_to_gripper = T_Ground_to_Base * T_Base_to_Shoulder * T_Shoulder_to_Forearm * T_Forearm_to_Gripper
-   
+```
 Each local transform matrix maps the orientation rotation matrix (3x3) and spatial translation vector (3x1) relative to the preceding joint frame.
 
 The solver checks boundaries against a safe workspace horizon, computing separate configuration branches:
@@ -59,7 +60,7 @@ Shoulder Pitch Servo      Digital Pin 6            External 5V/6V DC (Common Gro
 Forearm Pitch Servo       Digital Pin 9            External 5V/6V DC (Common Ground)
 Wrist/Thumb Servo         Digital Pin 10           External 5V/6V DC (Common Ground)
 Parallel Gripper Servo    Digital Pin 11           External 5V/6V DC (Common Ground)
----
+
 ```
 
 ## 🚀 Installation & Deployment
