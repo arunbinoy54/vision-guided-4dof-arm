@@ -2,7 +2,7 @@
 # Autonomous 4-DOF Vision-Guided Robotic Sorting Manipulator
 
 <p align="center">
-  <img src="arm1.jpg" alt="Autonomous 4-DOF Robotic Manipulator Side Profile" width="25%" />
+  <img src="arm1.jpg" alt="Autonomous 4-DOF Robotic Manipulator Side Profile" width="30%" />
   <img src="arm.jpg" alt="Mechatronic System and Breadboard Wiring Layout" width="45%" />
 </p>
 
