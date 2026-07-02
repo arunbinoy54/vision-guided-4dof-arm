@@ -36,7 +36,7 @@ base_angle_rad = math.atan2(dy, dx)
 ```text
    T_Ground_to_gripper = T_Ground_to_Base * T_Base_to_Shoulder * T_Shoulder_to_Forearm * T_Forearm_to_Gripper
 ```
-Each local transform matrix maps the orientation rotation matrix (3x3) and spatial translation vector (3x1) relative to the preceding joint frame.
+Each local transform matrix maps the 2D orientation rotation matrix (2x2) and spatial translation vector (2x1) relative to the preceding joint frame inside the operational 2D plane.
 
 The solver checks boundaries against a safe workspace horizon, computing separate configuration branches:
 * **Elbow-Up (`valid_solutions["Elbow_Up"]`):** Chosen dynamically to maximize high-clearance pick trajectories.
@@ -68,10 +68,7 @@ Parallel Gripper Servo    Digital Pin 11           External 5V/6V DC (Common Gro
 ### 1. Dependencies Setup
 Ensure your local Python environment matches the necessary libraries. Install required software stacks using:
 ```bash
-pip install -r opencv
-pip install -r cvzone
-pip install -r mediapipe
-pip install -r pyserial
+pip install opencv-python cvzone pyserial
 
 ```
 ### 2.Firmware Deployment
